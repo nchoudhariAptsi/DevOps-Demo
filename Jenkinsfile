@@ -1,6 +1,12 @@
 pipeline {
     agent any
 
+    stage('List files') {
+    steps {
+        sh 'ls -al'
+        }
+    }
+
     stages {
         stage('Static Analysis') {
             steps {
