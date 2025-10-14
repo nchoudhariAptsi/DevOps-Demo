@@ -9,6 +9,21 @@
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
+<plugin>
+   <groupId>com.github.spotbugs</groupId>
+   <artifactId>spotbugs-maven-plugin</artifactId>
+   <version>4.7.3.0</version>
+   <executions>
+       <execution>
+           <goals>
+               <goal>spotbugs</goal>
+               <goal>check</goal>
+           </goals>
+       </execution>
+   </executions>
+</plugin>
+
+         
   <build>
     <plugins>
       <plugin>
